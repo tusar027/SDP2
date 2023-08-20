@@ -1,0 +1,253 @@
+/* -------------------------------
+Reset all default margin & padding
+------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -------------------------------
+    Declare Styles Variable
+------------------------------- */
+:root {
+  --color-green: #26ae60;
+  --color-blue: #2471fb;
+  --color-white: #fff;
+}
+/* -------------------------------
+    Common Styles or Utilities
+------------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* -------------------------------
+              Navbar
+------------------------------- */
+.custom-navbar-brand {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: 700;
+}
+.custom-navbar-brand:hover {
+  color: #3e3e3e;
+}
+.navbar-nav .nav-link {
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--color-green);
+}
+.navbar-toggler {
+  color: var(--color-blue);
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+/* -------------------------------
+          Button Area
+------------------------------- */
+/* register button */
+.register-btn {
+  padding: 8px 40px;
+  text-decoration: none;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+.register-btn:hover {
+  background-color: transparent;
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+/* -------------------------------
+          Dropdown Area
+------------------------------- */
+.dropdown-menu {
+  background-color: var(--color-green);
+}
+.dropdown-item {
+  color: var(--color-white);
+  font-size: 14px;
+}
+.dropdown-item:focus {
+  background-color: var(--color-green);
+}
+
+/* -------------------------------
+        Admin Login Page
+------------------------------- */
+.login-bg {
+  margin-top: 80px;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.login-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.form-text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.login-btn {
+  padding: 8px 40px;
+  text-decoration: none;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+.login-btn:hover {
+  background-color: transparent;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+/* -------------------------------
+      Registration.html
+------------------------------- */
+.registration-section {
+  height: 100vh;
+  display: flex;
+  /* background-color: #26ae60; */
+  align-items: center;
+}
+.register-left-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-control:focus {
+  border-color: var(--color-green);
+  box-shadow: inset 0 1px 1px rgba(71, 255, 47, 0.075),
+    0 0 8px rgba(67, 255, 92, 0.6);
+}
+/* -------------------------------
+  Registration success page
+------------------------------- */
+.registration-success-bg {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registration-success-bg h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.registration-success-bg p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* -------------------------------
+User Dashboard Card
+------------------------------- */
+.banner-container {
+  background-color: var(--color-green);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-user-card {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-radius: 10px;
+  background: #f5eef8;
+}
+.custom-profile-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 50px;
+  width: 60%;
+  margin: 30px auto 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.send-feedback-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 50px;
+  width: 60%;
+  margin: 70px auto 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+/* banner section */
+.banner {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.banner-title {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #3e3e3e;
+}
+.banner-title span {
+  color: var(--color-green);
+}
+.banner-text {
+  margin: 20px 0;
+  color: #3e3e3e;
+}
+/* covid info section */
+.covid-info-container {
+  background-color: #f2f2f2;
+  padding: 50px 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.covid-info-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.covid-info-text {
+  font-size: 26px;
+  font-weight: 700;
+}
+.covid-info-footer {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* -------------------------------
+Responsiveness for Mobile Devices
+------------------------------- */
+@media screen and (max-width: 576px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    padding: 10px;
+    margin-left: 0;
+  }
+  .dropdown-item {
+    text-align: center;
+  }
+}
